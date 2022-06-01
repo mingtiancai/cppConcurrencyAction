@@ -5,7 +5,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/src/c1/helloThread",
+            "program": "${workspaceFolder}/build/src/c1/testDetach",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
