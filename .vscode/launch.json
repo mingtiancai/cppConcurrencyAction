@@ -6,7 +6,8 @@
             "type": "cppdbg",
             "request": "launch",
             // Resolved by CMake Tools:
-            "program": "${workspaceFolder}/build/cppConcurrencyAction",
+            // "program": "${workspaceFolder}/build/cppConcurrencyAction",
+            "program": "${workspaceFolder}/build/src/c1/helloThread",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
