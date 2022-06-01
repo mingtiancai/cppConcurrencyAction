@@ -13,3 +13,6 @@ target_link_libraries(testProcessExit PUBLIC pthread)
 
 add_executable(testPthreadExit testPthreadExit.cpp)
 target_link_libraries(testPthreadExit PUBLIC pthread) 
+
+add_executable(testException testException.cpp)
+target_link_libraries(testException PUBLIC pthread) 
