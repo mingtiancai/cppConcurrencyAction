@@ -19,3 +19,6 @@ target_link_libraries(testException PUBLIC pthread)
 
 add_executable(testThreadGuardException testThreadGuardException.cpp)
 target_link_libraries(testThreadGuardException PUBLIC pthread) 
+
+add_executable(testRef testRef.cpp)
+target_link_libraries(testRef PUBLIC pthread)
