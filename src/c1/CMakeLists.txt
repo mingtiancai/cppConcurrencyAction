@@ -25,3 +25,6 @@ target_link_libraries(testRef PUBLIC pthread)
 
 add_executable(testUseMove testUseMove.cpp)
 target_link_libraries(testUseMove PUBLIC pthread)
+
+add_executable(testMoveOwner testMoveOwner.cpp)
+target_link_libraries(testMoveOwner PUBLIC pthread)
