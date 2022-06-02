@@ -22,3 +22,6 @@ target_link_libraries(testThreadGuardException PUBLIC pthread)
 
 add_executable(testRef testRef.cpp)
 target_link_libraries(testRef PUBLIC pthread)
+
+add_executable(testUseMove testUseMove.cpp)
+target_link_libraries(testUseMove PUBLIC pthread)
