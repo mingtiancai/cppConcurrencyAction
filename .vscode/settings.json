@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "chrono": "cpp"
+        "chrono": "cpp",
+        "mutex": "cpp"
     }
 }
