@@ -13,5 +13,7 @@ int main(int argc, char **argv)
     cout << "3" << endl;
     cout << "4" << endl;
 
+    cout << thread::hardware_concurrency() << endl;
+
     return 0;
 }
