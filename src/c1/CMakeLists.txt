@@ -31,3 +31,6 @@ target_link_libraries(testMoveOwner PUBLIC pthread)
 
 add_executable(testScopeThread testScopeThread.cpp)
 target_link_libraries(testScopeThread PUBLIC pthread)
+
+add_executable(testVectorThread testVectorThread.cpp)
+target_link_libraries(testVectorThread PUBLIC pthread)

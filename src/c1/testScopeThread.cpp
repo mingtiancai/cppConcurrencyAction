@@ -51,7 +51,6 @@ int main(int argc, char **argv)
 {
     ThreadFunc func;
 
-    // ScopeThread t1(thread(f, 1));
     ScopeThread t1(move(thread(&ThreadFunc::operator(), &func)));
 
     for (int i = 0; i < 10; i++)
