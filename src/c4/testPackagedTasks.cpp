@@ -92,7 +92,6 @@ int main(int argc, char **argv)
 
     str = "222";
     demo.postTask<void(string)>(func1, ref(str));
-
     this_thread::sleep_for(chrono::seconds(15));
     demo.setShutDown();
 

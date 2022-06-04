@@ -3,14 +3,16 @@
 #include <mutex>
 #include <future>
 #include <chrono>
+#include <string>
 
 using namespace std;
 
-int doSomething()
+int doSomething(string str)
 {
     for (int i = 0; i < 10; i++)
     {
-        cout << "do something: " << i << endl;
+        cout << str << " --- "
+             << "do something: " << i << endl;
         this_thread::sleep_for(chrono::seconds(1));
     }
 
@@ -19,7 +21,8 @@ int doSomething()
 
 int main(int agrc, char **argv)
 {
-    future<int> res = async(doSomething);
+    string name = "test";
+    future<int> res = async(doSomething, ref(name));
 
     for (int i = 0; i < 10; i++)
     {
