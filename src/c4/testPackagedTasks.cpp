@@ -88,8 +88,10 @@ int main(int argc, char **argv)
 
     string str = "111";
     demo.postTask<void(string)>(func1, ref(str));
-
     thread t1(&Demo::worker, &demo);
+
+    str = "222";
+    demo.postTask<void(string)>(func1, ref(str));
     t1.join();
 
     return 0;
