@@ -5,7 +5,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/src/c1/testVectorThread",
+            "program": "${workspaceFolder}/build/src/c4/testFuture",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
