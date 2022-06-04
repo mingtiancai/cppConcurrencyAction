@@ -27,7 +27,11 @@ int main(int agrc, char **argv)
         this_thread::sleep_for(chrono::seconds(1));
     }
 
-    cout << "res: " << res.get() << endl;
+    auto result = res.get();
+
+    cout << "res: " << result << endl;
+    cout << "res: " << result << endl;
+    cout << "res: " << result << endl;
 
     return 0;
 }
